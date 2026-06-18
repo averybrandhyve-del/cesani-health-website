@@ -984,6 +984,27 @@ p {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+
   .header__actions {
     display: none;
   }
@@ -1003,6 +1024,7 @@ p {
     visibility: hidden;
     transition: all var(--transition-normal);
     z-index: 999;
+    overflow-y: auto;
   }
   
   .nav--active {
@@ -1058,6 +1080,39 @@ p {
   
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .sidebar-box {
+    padding: 24px;
+  }
+
+  .slider {
+    padding: 32px 24px;
+  }
+
+  .slider__indicator {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .stepper {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .trust-bar__marquee {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .local-map-wrapper {
+    height: 250px;
   }
 }
 
@@ -1227,6 +1282,13 @@ p {
 @media (max-width: 600px) {
   .local-card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 
